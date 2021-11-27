@@ -1,0 +1,2380 @@
+{
+  "contractName": "MaizeInsurance",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "client",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "insurer",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get_policy",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "client_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "policy_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "maize_variety",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "start_date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "end_date",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MaizeInsurance.Policy[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "client_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "policy_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "maize_variety",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "start_date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "end_date",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MaizeInsurance.Policy",
+          "name": "_policy",
+          "type": "tuple"
+        }
+      ],
+      "name": "add_policy",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "validate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "validate",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"client_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"policy_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"maize_variety\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"start_date\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"end_date\",\"type\":\"uint256\"}],\"internalType\":\"struct MaizeInsurance.Policy\",\"name\":\"_policy\",\"type\":\"tuple\"}],\"name\":\"add_policy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"client\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get_policy\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"client_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"policy_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"maize_variety\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"start_date\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"end_date\",\"type\":\"uint256\"}],\"internalType\":\"struct MaizeInsurance.Policy[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"insurer\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"validate\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"validate\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Store & retrieve value in a variable\",\"methods\":{},\"title\":\"Storage\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/KilimoShwari.sol\":\"MaizeInsurance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/KilimoShwari.sol\":{\"keccak256\":\"0xaedc789b27e2fea55899a0ddfbbcc4ef1ed786acbdbe5d14b79e289b1528787a\",\"urls\":[\"bzz-raw://314863b4fae796d013e57a26578a498d72a1948dc03cb0c106960647a566569c\",\"dweb:/ipfs/QmTUfXJ4KDQFWwNre87rjpAjRQRJ7MJE6DKgaTuRxDPwgB\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610764806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063109e94cf1461005c5780634e8e59751461007a57806364168d281461008f5780636901f668146100a4578063dbc837c5146100b9575b600080fd5b6100646100c1565b6040516100719190610619565b60405180910390f35b61008d610088366004610493565b6100d0565b005b6100976101bd565b6040516100719190610627565b6100ac6102e7565b6040516100719190610638565b6100646102ec565b6000546001600160a01b031681565b6040805160a081018252825181526020808401518183019081528484015193830193845260608086015190840152608080860151908401526002805460018101808355600092909252845160059091027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace810191825592517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5acf840155945180519195936101a2937f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad001929101906102fb565b50606082015181600301556080820151816004015550505050565b60606002805480602002602001604051908101604052809291908181526020016000905b828210156102dd57838290600052602060002090600502016040518060a00160405290816000820154815260200160018201548152602001600282018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102b15780601f10610286576101008083540402835291602001916102b1565b820191906000526020600020905b81548152906001019060200180831161029457829003601f168201915b5050505050815260200160038201548152602001600482015481525050815260200190600101906101e1565b5050505090505b90565b600190565b6001546001600160a01b031681565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061033c57805160ff1916838001178555610369565b82800160010185558215610369579182015b8281111561036957825182559160200191906001019061034e565b50610375929150610379565b5090565b6102e491905b80821115610375576000815560010161037f565b600082601f8301126103a457600080fd5b81356103b76103b28261066d565b610646565b915080825260208301602083018583830111156103d357600080fd5b6103de8382846106c4565b50505092915050565b600060a082840312156103f957600080fd5b61040360a0610646565b905060006104118484610482565b825250602061042284848301610482565b602083015250604082013567ffffffffffffffff81111561044257600080fd5b61044e84828501610393565b604083015250606061046284828501610482565b606083015250608061047684828501610482565b60808301525092915050565b803561048d8161070a565b92915050565b6000602082840312156104a557600080fd5b813567ffffffffffffffff8111156104bc57600080fd5b6104c8848285016103e7565b949350505050565b60006104dc83836105a1565b9392505050565b6104ec816106a8565b82525050565b60006104fd8261069b565b610507818561069f565b93508360208202850161051985610695565b8060005b85811015610553578484038952815161053685826104d0565b945061054183610695565b60209a909a019992505060010161051d565b5091979650505050505050565b6104ec816106b3565b60006105748261069b565b61057e818561069f565b935061058e8185602086016106d0565b61059781610700565b9093019392505050565b805160009060a08401906105b58582610610565b5060208301516105c86020860182610610565b50604083015184820360408601526105e08282610569565b91505060608301516105f56060860182610610565b5060808301516106086080860182610610565b509392505050565b6104ec816102e4565b6020810161048d82846104e3565b602080825281016104dc81846104f2565b6020810161048d8284610560565b60405181810167ffffffffffffffff8111828210171561066557600080fd5b604052919050565b600067ffffffffffffffff82111561068457600080fd5b506020601f91909101601f19160190565b60200190565b5190565b90815260200190565b600061048d826106b8565b151590565b6001600160a01b031690565b82818337506000910152565b60005b838110156106eb5781810151838201526020016106d3565b838111156106fa576000848401525b50505050565b601f01601f191690565b610713816102e4565b811461071e57600080fd5b5056fea365627a7a7231582014feefad233ea3ad768c692bb3d4dceeab1f2a0a7fc033a8598aa8705f10011d6c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063109e94cf1461005c5780634e8e59751461007a57806364168d281461008f5780636901f668146100a4578063dbc837c5146100b9575b600080fd5b6100646100c1565b6040516100719190610619565b60405180910390f35b61008d610088366004610493565b6100d0565b005b6100976101bd565b6040516100719190610627565b6100ac6102e7565b6040516100719190610638565b6100646102ec565b6000546001600160a01b031681565b6040805160a081018252825181526020808401518183019081528484015193830193845260608086015190840152608080860151908401526002805460018101808355600092909252845160059091027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace810191825592517f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5acf840155945180519195936101a2937f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad001929101906102fb565b50606082015181600301556080820151816004015550505050565b60606002805480602002602001604051908101604052809291908181526020016000905b828210156102dd57838290600052602060002090600502016040518060a00160405290816000820154815260200160018201548152602001600282018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102b15780601f10610286576101008083540402835291602001916102b1565b820191906000526020600020905b81548152906001019060200180831161029457829003601f168201915b5050505050815260200160038201548152602001600482015481525050815260200190600101906101e1565b5050505090505b90565b600190565b6001546001600160a01b031681565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061033c57805160ff1916838001178555610369565b82800160010185558215610369579182015b8281111561036957825182559160200191906001019061034e565b50610375929150610379565b5090565b6102e491905b80821115610375576000815560010161037f565b600082601f8301126103a457600080fd5b81356103b76103b28261066d565b610646565b915080825260208301602083018583830111156103d357600080fd5b6103de8382846106c4565b50505092915050565b600060a082840312156103f957600080fd5b61040360a0610646565b905060006104118484610482565b825250602061042284848301610482565b602083015250604082013567ffffffffffffffff81111561044257600080fd5b61044e84828501610393565b604083015250606061046284828501610482565b606083015250608061047684828501610482565b60808301525092915050565b803561048d8161070a565b92915050565b6000602082840312156104a557600080fd5b813567ffffffffffffffff8111156104bc57600080fd5b6104c8848285016103e7565b949350505050565b60006104dc83836105a1565b9392505050565b6104ec816106a8565b82525050565b60006104fd8261069b565b610507818561069f565b93508360208202850161051985610695565b8060005b85811015610553578484038952815161053685826104d0565b945061054183610695565b60209a909a019992505060010161051d565b5091979650505050505050565b6104ec816106b3565b60006105748261069b565b61057e818561069f565b935061058e8185602086016106d0565b61059781610700565b9093019392505050565b805160009060a08401906105b58582610610565b5060208301516105c86020860182610610565b50604083015184820360408601526105e08282610569565b91505060608301516105f56060860182610610565b5060808301516106086080860182610610565b509392505050565b6104ec816102e4565b6020810161048d82846104e3565b602080825281016104dc81846104f2565b6020810161048d8284610560565b60405181810167ffffffffffffffff8111828210171561066557600080fd5b604052919050565b600067ffffffffffffffff82111561068457600080fd5b506020601f91909101601f19160190565b60200190565b5190565b90815260200190565b600061048d826106b8565b151590565b6001600160a01b031690565b82818337506000910152565b60005b838110156106eb5781810151838201526020016106d3565b838111156106fa576000848401525b50505050565b601f01601f191690565b610713816102e4565b811461071e57600080fd5b5056fea365627a7a7231582014feefad233ea3ad768c692bb3d4dceeab1f2a0a7fc033a8598aa8705f10011d6c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "175:1788:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;175:1788:0;;;;;;;",
+  "deployedSourceMap": "175:1788:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;175:1788:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;571:29;;;:::i;:::-;;;;;;;;;;;;;;;;1661:209;;;;;;;;;:::i;:::-;;1561:90;;;:::i;:::-;;;;;;;;1880:78;;;:::i;:::-;;;;;;;;606:30;;;:::i;571:29::-;;;-1:-1:-1;;;;;571:29:0;;:::o;1661:209::-;1747:105;;;;;;;;1754:17;;1747:105;;;1773:17;;;;1747:105;;;;;;1792:21;;;;1747:105;;;;;;;1815:18;;;;1747:105;;;;;1835:16;;;;1747:105;;;;1720:8;27:10:-1;;39:1;23:18;;45:23;;;-1:-1;1720:143:0;;;;;;;;;;;;;;;;;;;;;;;;;;23:18:-1;;1720:143:0;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1661:209;:::o;1561:90::-;1603:15;1636:8;1629:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1561:90;;:::o;1880:78::-;1947:4;1880:78;:::o;606:30::-;;;-1:-1:-1;;;;;606:30:0;;:::o;175:1788::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;175:1788:0;;;-1:-1:-1;175:1788:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;6:434:-1;;104:3;97:4;89:6;85:17;81:27;71:2;;122:1;119;112:12;71:2;159:6;146:20;181:61;196:45;234:6;196:45;;;181:61;;;172:70;;262:6;255:5;248:21;298:4;290:6;286:17;331:4;324:5;320:16;366:3;357:6;352:3;348:16;345:25;342:2;;;383:1;380;373:12;342:2;393:41;427:6;422:3;417;393:41;;;64:376;;;;;;;;483:1018;;594:4;582:9;577:3;573:19;569:30;566:2;;;612:1;609;602:12;566:2;630:20;645:4;630:20;;;621:29;-1:-1;705:1;737:49;782:3;762:9;737:49;;;712:75;;-1:-1;853:2;886:49;931:3;907:22;;;886:49;;;879:4;872:5;868:16;861:75;808:139;1034:2;1023:9;1019:18;1006:32;1058:18;1050:6;1047:30;1044:2;;;1090:1;1087;1080:12;1044:2;1125:55;1176:3;1167:6;1156:9;1152:22;1125:55;;;1118:4;1111:5;1107:16;1100:81;957:235;1248:2;1281:49;1326:3;1317:6;1306:9;1302:22;1281:49;;;1274:4;1267:5;1263:16;1256:75;1202:140;1396:3;1430:49;1475:3;1466:6;1455:9;1451:22;1430:49;;;1423:4;1416:5;1412:16;1405:75;1352:139;560:941;;;;;1508:130;1575:20;;1600:33;1575:20;1600:33;;;1560:78;;;;;1645:371;;1771:2;1759:9;1750:7;1746:23;1742:32;1739:2;;;1787:1;1784;1777:12;1739:2;1822:31;;1873:18;1862:30;;1859:2;;;1905:1;1902;1895:12;1859:2;1925:75;1992:7;1983:6;1972:9;1968:22;1925:75;;;1915:85;1733:283;-1:-1;;;;1733:283;2024:229;;2161:86;2243:3;2235:6;2161:86;;;2147:100;2140:113;-1:-1;;;2140:113;2261:137;2360:32;2386:5;2360:32;;;2355:3;2348:45;2342:56;;;2478:992;;2659:72;2725:5;2659:72;;;2744:104;2841:6;2836:3;2744:104;;;2737:111;;2871:3;2913:4;2905:6;2901:17;2896:3;2892:27;2940:74;3008:5;2940:74;;;3034:7;3062:1;3047:384;3072:6;3069:1;3066:13;3047:384;;;3134:9;3128:4;3124:20;3119:3;3112:33;3179:6;3173:13;3201:100;3296:4;3281:13;3201:100;;;3193:108;;3318:78;3389:6;3318:78;;;3419:4;3410:14;;;;;3308:88;-1:-1;;3094:1;3087:9;3047:384;;;-1:-1;3444:4;;2638:832;-1:-1;;;;;;;2638:832;3478:104;3555:21;3570:5;3555:21;;3589:319;;3687:35;3716:5;3687:35;;;3734:61;3788:6;3783:3;3734:61;;;3727:68;;3800:52;3845:6;3840:3;3833:4;3826:5;3822:16;3800:52;;;3873:29;3895:6;3873:29;;;3864:39;;;;3667:241;-1:-1;;;3667:241;3982:1038;4184:23;;3982:1038;;4113:4;4104:14;;;4213:63;4108:3;4184:23;4213:63;;;4133:149;4360:4;4353:5;4349:16;4343:23;4372:63;4429:4;4424:3;4420:14;4406:12;4372:63;;;4292:149;4523:4;4516:5;4512:16;4506:23;4575:3;4569:4;4565:14;4558:4;4553:3;4549:14;4542:38;4595:69;4659:4;4645:12;4595:69;;;4587:77;;4451:225;4755:4;4748:5;4744:16;4738:23;4767:63;4824:4;4819:3;4815:14;4801:12;4767:63;;;4686:150;4913:4;4906:5;4902:16;4896:23;4925:63;4982:4;4977:3;4973:14;4959:12;4925:63;;;-1:-1;5011:4;4086:934;-1:-1;;;4086:934;5027:103;5100:24;5118:5;5100:24;;5137:245;5271:2;5256:18;;5285:87;5260:9;5345:6;5285:87;;5389:433;5593:2;5607:47;;;5578:18;;5668:144;5578:18;5798:6;5668:144;;5829:201;5941:2;5926:18;;5955:65;5930:9;5993:6;5955:65;;6037:256;6099:2;6093:9;6125:17;;;6200:18;6185:34;;6221:22;;;6182:62;6179:2;;;6257:1;6254;6247:12;6179:2;6273;6266:22;6077:216;;-1:-1;6077:216;6300:318;;6440:18;6432:6;6429:30;6426:2;;;6472:1;6469;6462:12;6426:2;-1:-1;6603:4;6539;6516:17;;;;-1:-1;;6512:33;6593:15;;6363:255;6625:169;6767:4;6758:14;;6715:79;6801:155;6922:12;;6893:63;7222:196;7358:19;;;7407:4;7398:14;;7351:67;7588:99;;7658:24;7676:5;7658:24;;7694:85;7760:13;7753:21;;7736:43;7786:121;-1:-1;;;;;7848:54;;7831:76;7994:145;8075:6;8070:3;8065;8052:30;-1:-1;8131:1;8113:16;;8106:27;8045:94;8148:268;8213:1;8220:101;8234:6;8231:1;8228:13;8220:101;;;8301:11;;;8295:18;8282:11;;;8275:39;8256:2;8249:10;8220:101;;;8336:6;8333:1;8330:13;8327:2;;;8401:1;8392:6;8387:3;8383:16;8376:27;8327:2;8197:219;;;;;8424:97;8512:2;8492:14;-1:-1;;8488:28;;8472:49;8529:117;8598:24;8616:5;8598:24;;;8591:5;8588:35;8578:2;;8637:1;8634;8627:12;8578:2;8572:74;",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >=0.4.22 <0.9.0;\npragma experimental ABIEncoderV2;\n/**\n * @title Storage\n * @dev Store & retrieve value in a variable\n */\ncontract MaizeInsurance {\n\n    /*\n        * Main Variables *\n        policy {\n            - client_id: unsigned integer\n            - policy_id: unsigned integer\n            - maize_variety: string\n            - start_date: uint256 => because we use epoch time\n            - end_date: uint256\n        } - struct\n        - buyers_address: address\n        - sellers_address: adress\n    */\n    \n    address payable public client;\n    address payable public insurer;\n    \n    struct Policy{\n        uint client_id;\n        uint policy_id;\n        string maize_variety;\n        uint256 start_date;\n        uint256 end_date;\n    }\n    \n    struct Variety{\n        string variety_name;\n        uint[2] acceptable_monthly_rain_avgs;\n        uint[2] acceptable_monthly_temp_avgs;\n        uint[2] acceptable_weekly_rain_avgs;\n        uint[2] acceptable_weekly_temp_avgs;\n    }\n    \n    Policy[] policies;\n    Variety[] varieties; //this will hold all the threshold data for the different varieties \n\n\n    /*\n        * Main Functions *\n        - constructor () => Initialize a new contract\n        - validate () => Validate that thresholds were met\n        \n        * Accessor Functions*\n        -get_policy\n        \n        * Mutation Functions*\n        -set_policy\n    */\n    \n    // constructor() {\n    //     policy = Policy(1, 1, \"Hybrid Series 5\", 1606063665, 1611334065);\n    // }\n    \n    function get_policy() public view returns(Policy[] memory){\n        return policies;\n    }\n    \n    function add_policy(Policy memory _policy) public{\n        policies.push(\n            Policy(_policy.client_id, _policy.policy_id, _policy.maize_variety, _policy.start_date, _policy.end_date) \n        );\n    }\n    \n    function validate() public returns (bool validate){\n        return true;\n    }\n  \n}",
+  "sourcePath": "/home/w3ndo/Desktop/School/2021/Final Year Project/KilimoShwari-Solidity/workflow2/contracts/KilimoShwari.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/KilimoShwari.sol",
+    "exportedSymbols": {
+      "MaizeInsurance": [
+        83
+      ]
+    },
+    "id": 84,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:32:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "70:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Storage\n@dev Store & retrieve value in a variable",
+        "fullyImplemented": true,
+        "id": 83,
+        "linearizedBaseContracts": [
+          83
+        ],
+        "name": "MaizeInsurance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "client",
+            "nodeType": "VariableDeclaration",
+            "scope": 83,
+            "src": "571:29:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "571:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "insurer",
+            "nodeType": "VariableDeclaration",
+            "scope": 83,
+            "src": "606:30:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "606:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "MaizeInsurance.Policy",
+            "id": 17,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "client_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "670:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "670:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "policy_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "694:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "694:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "maize_variety",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "718:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "718:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "name": "start_date",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "748:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 13,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "748:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16,
+                "name": "end_date",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "776:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "776:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Policy",
+            "nodeType": "StructDefinition",
+            "scope": 83,
+            "src": "647:152:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "MaizeInsurance.Variety",
+            "id": 36,
+            "members": [
+              {
+                "constant": false,
+                "id": 19,
+                "name": "variety_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "833:19:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 18,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "833:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23,
+                "name": "acceptable_monthly_rain_avgs",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "862:36:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                  "typeString": "uint256[2]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 20,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "862:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 22,
+                  "length": {
+                    "argumentTypes": null,
+                    "hexValue": "32",
+                    "id": 21,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "867:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_2_by_1",
+                      "typeString": "int_const 2"
+                    },
+                    "value": "2"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "862:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                    "typeString": "uint256[2]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 27,
+                "name": "acceptable_monthly_temp_avgs",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "908:36:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                  "typeString": "uint256[2]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 24,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "908:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 26,
+                  "length": {
+                    "argumentTypes": null,
+                    "hexValue": "32",
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "913:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_2_by_1",
+                      "typeString": "int_const 2"
+                    },
+                    "value": "2"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "908:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                    "typeString": "uint256[2]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31,
+                "name": "acceptable_weekly_rain_avgs",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "954:35:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                  "typeString": "uint256[2]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 28,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "954:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 30,
+                  "length": {
+                    "argumentTypes": null,
+                    "hexValue": "32",
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "959:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_2_by_1",
+                      "typeString": "int_const 2"
+                    },
+                    "value": "2"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "954:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                    "typeString": "uint256[2]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 35,
+                "name": "acceptable_weekly_temp_avgs",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "999:35:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                  "typeString": "uint256[2]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 32,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "999:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 34,
+                  "length": {
+                    "argumentTypes": null,
+                    "hexValue": "32",
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1004:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_2_by_1",
+                      "typeString": "int_const 2"
+                    },
+                    "value": "2"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "999:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                    "typeString": "uint256[2]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Variety",
+            "nodeType": "StructDefinition",
+            "scope": 83,
+            "src": "809:232:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 39,
+            "name": "policies",
+            "nodeType": "VariableDeclaration",
+            "scope": 83,
+            "src": "1051:17:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Policy_$17_storage_$dyn_storage",
+              "typeString": "struct MaizeInsurance.Policy[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 37,
+                "name": "Policy",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 17,
+                "src": "1051:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Policy_$17_storage_ptr",
+                  "typeString": "struct MaizeInsurance.Policy"
+                }
+              },
+              "id": 38,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1051:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Policy_$17_storage_$dyn_storage_ptr",
+                "typeString": "struct MaizeInsurance.Policy[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 42,
+            "name": "varieties",
+            "nodeType": "VariableDeclaration",
+            "scope": 83,
+            "src": "1074:19:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Variety_$36_storage_$dyn_storage",
+              "typeString": "struct MaizeInsurance.Variety[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 40,
+                "name": "Variety",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 36,
+                "src": "1074:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Variety_$36_storage_ptr",
+                  "typeString": "struct MaizeInsurance.Variety"
+                }
+              },
+              "id": 41,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1074:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Variety_$36_storage_$dyn_storage_ptr",
+                "typeString": "struct MaizeInsurance.Variety[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 50,
+              "nodeType": "Block",
+              "src": "1619:32:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 48,
+                    "name": "policies",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 39,
+                    "src": "1636:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Policy_$17_storage_$dyn_storage",
+                      "typeString": "struct MaizeInsurance.Policy storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 47,
+                  "id": 49,
+                  "nodeType": "Return",
+                  "src": "1629:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 51,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get_policy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1580:2:0"
+            },
+            "returnParameters": {
+              "id": 47,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51,
+                  "src": "1603:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Policy_$17_memory_$dyn_memory_ptr",
+                    "typeString": "struct MaizeInsurance.Policy[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 44,
+                      "name": "Policy",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 17,
+                      "src": "1603:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Policy_$17_storage_ptr",
+                        "typeString": "struct MaizeInsurance.Policy"
+                      }
+                    },
+                    "id": 45,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1603:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Policy_$17_storage_$dyn_storage_ptr",
+                      "typeString": "struct MaizeInsurance.Policy[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1602:17:0"
+            },
+            "scope": 83,
+            "src": "1561:90:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 73,
+              "nodeType": "Block",
+              "src": "1710:160:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 60,
+                              "name": "_policy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 53,
+                              "src": "1754:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                                "typeString": "struct MaizeInsurance.Policy memory"
+                              }
+                            },
+                            "id": 61,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "client_id",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 8,
+                            "src": "1754:17:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 62,
+                              "name": "_policy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 53,
+                              "src": "1773:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                                "typeString": "struct MaizeInsurance.Policy memory"
+                              }
+                            },
+                            "id": 63,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "policy_id",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 10,
+                            "src": "1773:17:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 64,
+                              "name": "_policy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 53,
+                              "src": "1792:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                                "typeString": "struct MaizeInsurance.Policy memory"
+                              }
+                            },
+                            "id": 65,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "maize_variety",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 12,
+                            "src": "1792:21:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 66,
+                              "name": "_policy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 53,
+                              "src": "1815:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                                "typeString": "struct MaizeInsurance.Policy memory"
+                              }
+                            },
+                            "id": 67,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "start_date",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 14,
+                            "src": "1815:18:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 68,
+                              "name": "_policy",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 53,
+                              "src": "1835:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                                "typeString": "struct MaizeInsurance.Policy memory"
+                              }
+                            },
+                            "id": 69,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "end_date",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 16,
+                            "src": "1835:16:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_string_memory",
+                              "typeString": "string memory"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 59,
+                          "name": "Policy",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 17,
+                          "src": "1747:6:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_Policy_$17_storage_ptr_$",
+                            "typeString": "type(struct MaizeInsurance.Policy storage pointer)"
+                          }
+                        },
+                        "id": 70,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1747:105:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Policy_$17_memory",
+                          "typeString": "struct MaizeInsurance.Policy memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Policy_$17_memory",
+                          "typeString": "struct MaizeInsurance.Policy memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 56,
+                        "name": "policies",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 39,
+                        "src": "1720:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Policy_$17_storage_$dyn_storage",
+                          "typeString": "struct MaizeInsurance.Policy storage ref[] storage ref"
+                        }
+                      },
+                      "id": 58,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1720:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Policy_$17_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct MaizeInsurance.Policy storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 71,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1720:143:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 72,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1720:143:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 74,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add_policy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 54,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53,
+                  "name": "_policy",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 74,
+                  "src": "1681:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Policy_$17_memory_ptr",
+                    "typeString": "struct MaizeInsurance.Policy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 52,
+                    "name": "Policy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 17,
+                    "src": "1681:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Policy_$17_storage_ptr",
+                      "typeString": "struct MaizeInsurance.Policy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1680:23:0"
+            },
+            "returnParameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1710:0:0"
+            },
+            "scope": 83,
+            "src": "1661:209:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 81,
+              "nodeType": "Block",
+              "src": "1930:28:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 79,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1947:4:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 78,
+                  "id": 80,
+                  "nodeType": "Return",
+                  "src": "1940:11:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 82,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1897:2:0"
+            },
+            "returnParameters": {
+              "id": 78,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 77,
+                  "name": "validate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 82,
+                  "src": "1916:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 76,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1916:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1915:15:0"
+            },
+            "scope": 83,
+            "src": "1880:78:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 84,
+        "src": "175:1788:0"
+      }
+    ],
+    "src": "37:1926:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/KilimoShwari.sol",
+      "exportedSymbols": {
+        "MaizeInsurance": [
+          83
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "37:32:0"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "70:33:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Storage\n@dev Store & retrieve value in a variable",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            83
+          ],
+          "name": "MaizeInsurance",
+          "scope": 84
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "client",
+              "scope": 83,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address payable",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "payable",
+                  "type": "address payable"
+                },
+                "id": 3,
+                "name": "ElementaryTypeName",
+                "src": "571:15:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "571:29:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "insurer",
+              "scope": 83,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address payable",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "payable",
+                  "type": "address payable"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "606:15:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "606:30:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "MaizeInsurance.Policy",
+              "name": "Policy",
+              "scope": 83,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "client_id",
+                  "scope": 17,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "670:4:0"
+                  }
+                ],
+                "id": 8,
+                "name": "VariableDeclaration",
+                "src": "670:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "policy_id",
+                  "scope": 17,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 9,
+                    "name": "ElementaryTypeName",
+                    "src": "694:4:0"
+                  }
+                ],
+                "id": 10,
+                "name": "VariableDeclaration",
+                "src": "694:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "maize_variety",
+                  "scope": 17,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "718:6:0"
+                  }
+                ],
+                "id": 12,
+                "name": "VariableDeclaration",
+                "src": "718:20:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "start_date",
+                  "scope": 17,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 13,
+                    "name": "ElementaryTypeName",
+                    "src": "748:7:0"
+                  }
+                ],
+                "id": 14,
+                "name": "VariableDeclaration",
+                "src": "748:18:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "end_date",
+                  "scope": 17,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 15,
+                    "name": "ElementaryTypeName",
+                    "src": "776:7:0"
+                  }
+                ],
+                "id": 16,
+                "name": "VariableDeclaration",
+                "src": "776:16:0"
+              }
+            ],
+            "id": 17,
+            "name": "StructDefinition",
+            "src": "647:152:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "MaizeInsurance.Variety",
+              "name": "Variety",
+              "scope": 83,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "variety_name",
+                  "scope": 36,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 18,
+                    "name": "ElementaryTypeName",
+                    "src": "833:6:0"
+                  }
+                ],
+                "id": 19,
+                "name": "VariableDeclaration",
+                "src": "833:19:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "acceptable_monthly_rain_avgs",
+                  "scope": 36,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256[2]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "uint256[2]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 20,
+                        "name": "ElementaryTypeName",
+                        "src": "862:4:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "32",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 2",
+                          "value": "2"
+                        },
+                        "id": 21,
+                        "name": "Literal",
+                        "src": "867:1:0"
+                      }
+                    ],
+                    "id": 22,
+                    "name": "ArrayTypeName",
+                    "src": "862:7:0"
+                  }
+                ],
+                "id": 23,
+                "name": "VariableDeclaration",
+                "src": "862:36:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "acceptable_monthly_temp_avgs",
+                  "scope": 36,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256[2]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "uint256[2]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 24,
+                        "name": "ElementaryTypeName",
+                        "src": "908:4:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "32",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 2",
+                          "value": "2"
+                        },
+                        "id": 25,
+                        "name": "Literal",
+                        "src": "913:1:0"
+                      }
+                    ],
+                    "id": 26,
+                    "name": "ArrayTypeName",
+                    "src": "908:7:0"
+                  }
+                ],
+                "id": 27,
+                "name": "VariableDeclaration",
+                "src": "908:36:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "acceptable_weekly_rain_avgs",
+                  "scope": 36,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256[2]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "uint256[2]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 28,
+                        "name": "ElementaryTypeName",
+                        "src": "954:4:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "32",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 2",
+                          "value": "2"
+                        },
+                        "id": 29,
+                        "name": "Literal",
+                        "src": "959:1:0"
+                      }
+                    ],
+                    "id": 30,
+                    "name": "ArrayTypeName",
+                    "src": "954:7:0"
+                  }
+                ],
+                "id": 31,
+                "name": "VariableDeclaration",
+                "src": "954:35:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "acceptable_weekly_temp_avgs",
+                  "scope": 36,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256[2]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "uint256[2]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 32,
+                        "name": "ElementaryTypeName",
+                        "src": "999:4:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "32",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 2",
+                          "value": "2"
+                        },
+                        "id": 33,
+                        "name": "Literal",
+                        "src": "1004:1:0"
+                      }
+                    ],
+                    "id": 34,
+                    "name": "ArrayTypeName",
+                    "src": "999:7:0"
+                  }
+                ],
+                "id": 35,
+                "name": "VariableDeclaration",
+                "src": "999:35:0"
+              }
+            ],
+            "id": 36,
+            "name": "StructDefinition",
+            "src": "809:232:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "policies",
+              "scope": 83,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct MaizeInsurance.Policy[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct MaizeInsurance.Policy[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Policy",
+                      "referencedDeclaration": 17,
+                      "type": "struct MaizeInsurance.Policy"
+                    },
+                    "id": 37,
+                    "name": "UserDefinedTypeName",
+                    "src": "1051:6:0"
+                  }
+                ],
+                "id": 38,
+                "name": "ArrayTypeName",
+                "src": "1051:8:0"
+              }
+            ],
+            "id": 39,
+            "name": "VariableDeclaration",
+            "src": "1051:17:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "varieties",
+              "scope": 83,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct MaizeInsurance.Variety[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct MaizeInsurance.Variety[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Variety",
+                      "referencedDeclaration": 36,
+                      "type": "struct MaizeInsurance.Variety"
+                    },
+                    "id": 40,
+                    "name": "UserDefinedTypeName",
+                    "src": "1074:7:0"
+                  }
+                ],
+                "id": 41,
+                "name": "ArrayTypeName",
+                "src": "1074:9:0"
+              }
+            ],
+            "id": 42,
+            "name": "VariableDeclaration",
+            "src": "1074:19:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "get_policy",
+              "scope": 83,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 43,
+                "name": "ParameterList",
+                "src": "1580:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 51,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct MaizeInsurance.Policy[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "struct MaizeInsurance.Policy[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "Policy",
+                              "referencedDeclaration": 17,
+                              "type": "struct MaizeInsurance.Policy"
+                            },
+                            "id": 44,
+                            "name": "UserDefinedTypeName",
+                            "src": "1603:6:0"
+                          }
+                        ],
+                        "id": 45,
+                        "name": "ArrayTypeName",
+                        "src": "1603:8:0"
+                      }
+                    ],
+                    "id": 46,
+                    "name": "VariableDeclaration",
+                    "src": "1603:15:0"
+                  }
+                ],
+                "id": 47,
+                "name": "ParameterList",
+                "src": "1602:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 47
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 39,
+                          "type": "struct MaizeInsurance.Policy storage ref[] storage ref",
+                          "value": "policies"
+                        },
+                        "id": 48,
+                        "name": "Identifier",
+                        "src": "1636:8:0"
+                      }
+                    ],
+                    "id": 49,
+                    "name": "Return",
+                    "src": "1629:15:0"
+                  }
+                ],
+                "id": 50,
+                "name": "Block",
+                "src": "1619:32:0"
+              }
+            ],
+            "id": 51,
+            "name": "FunctionDefinition",
+            "src": "1561:90:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "add_policy",
+              "scope": 83,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_policy",
+                      "scope": 74,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct MaizeInsurance.Policy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "Policy",
+                          "referencedDeclaration": 17,
+                          "type": "struct MaizeInsurance.Policy"
+                        },
+                        "id": 52,
+                        "name": "UserDefinedTypeName",
+                        "src": "1681:6:0"
+                      }
+                    ],
+                    "id": 53,
+                    "name": "VariableDeclaration",
+                    "src": "1681:21:0"
+                  }
+                ],
+                "id": 54,
+                "name": "ParameterList",
+                "src": "1680:23:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 55,
+                "name": "ParameterList",
+                "src": "1710:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Policy_$17_memory",
+                                  "typeString": "struct MaizeInsurance.Policy memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct MaizeInsurance.Policy storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 39,
+                                  "type": "struct MaizeInsurance.Policy storage ref[] storage ref",
+                                  "value": "policies"
+                                },
+                                "id": 56,
+                                "name": "Identifier",
+                                "src": "1720:8:0"
+                              }
+                            ],
+                            "id": 58,
+                            "name": "MemberAccess",
+                            "src": "1720:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct MaizeInsurance.Policy memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 17,
+                                  "type": "type(struct MaizeInsurance.Policy storage pointer)",
+                                  "value": "Policy"
+                                },
+                                "id": 59,
+                                "name": "Identifier",
+                                "src": "1747:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "client_id",
+                                  "referencedDeclaration": 8,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 53,
+                                      "type": "struct MaizeInsurance.Policy memory",
+                                      "value": "_policy"
+                                    },
+                                    "id": 60,
+                                    "name": "Identifier",
+                                    "src": "1754:7:0"
+                                  }
+                                ],
+                                "id": 61,
+                                "name": "MemberAccess",
+                                "src": "1754:17:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "policy_id",
+                                  "referencedDeclaration": 10,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 53,
+                                      "type": "struct MaizeInsurance.Policy memory",
+                                      "value": "_policy"
+                                    },
+                                    "id": 62,
+                                    "name": "Identifier",
+                                    "src": "1773:7:0"
+                                  }
+                                ],
+                                "id": 63,
+                                "name": "MemberAccess",
+                                "src": "1773:17:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "maize_variety",
+                                  "referencedDeclaration": 12,
+                                  "type": "string memory"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 53,
+                                      "type": "struct MaizeInsurance.Policy memory",
+                                      "value": "_policy"
+                                    },
+                                    "id": 64,
+                                    "name": "Identifier",
+                                    "src": "1792:7:0"
+                                  }
+                                ],
+                                "id": 65,
+                                "name": "MemberAccess",
+                                "src": "1792:21:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "start_date",
+                                  "referencedDeclaration": 14,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 53,
+                                      "type": "struct MaizeInsurance.Policy memory",
+                                      "value": "_policy"
+                                    },
+                                    "id": 66,
+                                    "name": "Identifier",
+                                    "src": "1815:7:0"
+                                  }
+                                ],
+                                "id": 67,
+                                "name": "MemberAccess",
+                                "src": "1815:18:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "end_date",
+                                  "referencedDeclaration": 16,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 53,
+                                      "type": "struct MaizeInsurance.Policy memory",
+                                      "value": "_policy"
+                                    },
+                                    "id": 68,
+                                    "name": "Identifier",
+                                    "src": "1835:7:0"
+                                  }
+                                ],
+                                "id": 69,
+                                "name": "MemberAccess",
+                                "src": "1835:16:0"
+                              }
+                            ],
+                            "id": 70,
+                            "name": "FunctionCall",
+                            "src": "1747:105:0"
+                          }
+                        ],
+                        "id": 71,
+                        "name": "FunctionCall",
+                        "src": "1720:143:0"
+                      }
+                    ],
+                    "id": 72,
+                    "name": "ExpressionStatement",
+                    "src": "1720:143:0"
+                  }
+                ],
+                "id": 73,
+                "name": "Block",
+                "src": "1710:160:0"
+              }
+            ],
+            "id": 74,
+            "name": "FunctionDefinition",
+            "src": "1661:209:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "validate",
+              "scope": 83,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 75,
+                "name": "ParameterList",
+                "src": "1897:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "validate",
+                      "scope": 82,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 76,
+                        "name": "ElementaryTypeName",
+                        "src": "1916:4:0"
+                      }
+                    ],
+                    "id": 77,
+                    "name": "VariableDeclaration",
+                    "src": "1916:13:0"
+                  }
+                ],
+                "id": 78,
+                "name": "ParameterList",
+                "src": "1915:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 78
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "74727565",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "true"
+                        },
+                        "id": 79,
+                        "name": "Literal",
+                        "src": "1947:4:0"
+                      }
+                    ],
+                    "id": 80,
+                    "name": "Return",
+                    "src": "1940:11:0"
+                  }
+                ],
+                "id": 81,
+                "name": "Block",
+                "src": "1930:28:0"
+              }
+            ],
+            "id": 82,
+            "name": "FunctionDefinition",
+            "src": "1880:78:0"
+          }
+        ],
+        "id": 83,
+        "name": "ContractDefinition",
+        "src": "175:1788:0"
+      }
+    ],
+    "id": 84,
+    "name": "SourceUnit",
+    "src": "37:1926:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xC0e35F28Bd33bE2F28418d07A1Ce8DFd766F431F",
+      "transactionHash": "0x8f2aad77410ee9c60538bf5fa004ab767eba4f481ed2abdcdac5c7b360eae710"
+    },
+    "1637877166918": {
+      "events": {},
+      "links": {},
+      "address": "0x82ff7d95688ebd35654E4724EcA4a3C26bBd9A65",
+      "transactionHash": "0x6d7605fbde05380a5903e47dcdb6a213156d863510712a8ef016c287982be4d0"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-11-26T00:17:46.351Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Store & retrieve value in a variable",
+    "methods": {},
+    "title": "Storage"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
