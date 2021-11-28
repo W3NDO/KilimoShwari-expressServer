@@ -64,6 +64,6 @@ app.post('/buyPolicy', function(req, res) {
     res.send('Post request inbound')
 })
 
-app.listen(port, () => {
-    console.log(`KS listening at localhost:${port}`)
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`KS listening at localhost:${process.env.PORT}`)
 })
