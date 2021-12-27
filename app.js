@@ -4,8 +4,9 @@ const port = 3000;
 
 const infura_socket = "wss://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
 const infura_link = "https://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
-const metamask_link = "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161";
-const remix_contract_addr = "0xD43765DfF7aCa11e7c71978292C5fb8270734145";
+const metamask_link = "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"; 
+// const remix_contract_addr = "0xD43765DfF7aCa11e7c71978292C5fb8270734145"; 
+const remix_contract_addr ="0x7a280e9686B04C75055132358d7DD916A720A0f6"; 
 const ropsten_test_acc_addr = "0x9E09e2F1efA701451963C63b9606dd0340e16368";
 const remix_acc_addr = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
 const metamask_addr = "0xB48094CfC4F471918AFC54D5D1ADD9fd2Be2eA49";
@@ -48,7 +49,8 @@ app.get(`/policy/:id`, function(req, res){
 
 app.post('/buyPolicy', function(req, res) {
     console.log("attempting to buy a new policy")
-    contractSpec.methods.add_policy([9, 3, "Hybrid Series 5", 1606063665, 1611334065])
+    contractSpec.methods.add_policy([9, 3, "Hybrid Series 5", 1606063665, 1611334065]
+    )
         .send(
         {
             from: web3.eth.defaultAccount,
@@ -57,13 +59,41 @@ app.post('/buyPolicy', function(req, res) {
         }
     ).then( receipt => {
         console.log("Add_policy Result :: ", receipt);
+        res.send(receipt)
         contractSpec.methods.get_policy().call().then(res => {
-            console.log("Res:: ", res)
+            console.log("Res:: ", receipt)
         })
     })
-    res.send('Post request inbound')
 })
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log(`KS listening at localhost:${process.env.PORT}`)
+//Validation body format
+// Policy ID
+// weekly_rain_avgs: [12], 
+// monthly_rain_avgs: [3],
+// weekly_temp_avgs: [12], 
+// monthly_temp_avgs: [3]
+
+app.post('/validate', function(req, res){
+    policy_id = req.body.policy_id;
+    console.log("Validating policy with policy ID :: ", policy_id)
+    validation_data = 
+    validation = contractSpec.methods.validate(
+        [req.body.weekly_rain_avgs, 
+         req.body.monthly_rain_avgs,
+         req.body.weekly_temp_avgs,
+         req.body.monthly_temp_avgs
+        ]).send(
+            {
+                from: web3.eth.defaultAccount,
+                gasPrice: "40000000000",
+                gas: 1000000
+            }
+        ).then(response => {
+            console.log("Valid Claim? ", req.body.policy_id, " :: ", response )
+            res.send({policy_id: response})
+    })
+})
+
+app.listen(3000, () => {
+    console.log(`KS listening at localhost:${port}`)
 })
