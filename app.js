@@ -6,7 +6,7 @@ const infura_socket = "wss://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e
 const infura_link = "https://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
 const metamask_link = "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"; 
 // const remix_contract_addr = "0xD43765DfF7aCa11e7c71978292C5fb8270734145"; 
-const remix_contract_addr ="0x7a280e9686B04C75055132358d7DD916A720A0f6"; 
+const remix_contract_addr ="0xB3f4AF7539d3B42ed9cbda6d3DEcA4dD8C019F20"; 
 const ropsten_test_acc_addr = "0x9E09e2F1efA701451963C63b9606dd0340e16368";
 const remix_acc_addr = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
 const metamask_addr = "0xB48094CfC4F471918AFC54D5D1ADD9fd2Be2eA49";
@@ -27,6 +27,7 @@ web3.eth.defaultAccount = account.address;
 const MaizeContract = require('./MaizeInsurance.json')
 let contractSpec = new web3.eth.Contract(MaizeContract.abi, remix_contract_addr);
 
+app.use(express.json());
 app.get('/', (req, res) => {
     contractSpec.methods.get_policy().call().then(response => {
         console.log("Getting all policies")
@@ -47,10 +48,10 @@ app.get(`/policy/:id`, function(req, res){
     })    
 })
 
+
 app.post('/buyPolicy', function(req, res) {
-    console.log("attempting to buy a new policy")
-    contractSpec.methods.add_policy([9, 3, "Hybrid Series 5", 1606063665, 1611334065]
-    )
+    console.log("attempting to buy a new policy::", req.body)
+    contractSpec.methods.add_policy(req.body.content)
         .send(
         {
             from: web3.eth.defaultAccount,
