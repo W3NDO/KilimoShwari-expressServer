@@ -27,7 +27,7 @@ web3.eth.defaultAccount = account.address;
 const MaizeContract = require('./MaizeInsurance.json')
 let contractSpec = new web3.eth.Contract(MaizeContract.abi, remix_contract_addr);
 
-app.use(express.json());
+
 app.get('/', (req, res) => {
     contractSpec.methods.get_policy().call().then(response => {
         console.log("Getting all policies")
@@ -35,6 +35,7 @@ app.get('/', (req, res) => {
     })
 })
 
+// app.use(express.json());
 app.get(`/policy/:id`, function(req, res){
     requested_policy = []
     contracts = contractSpec.methods.get_policy().call().then(response => {
