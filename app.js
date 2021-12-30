@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 const infura_socket = "wss://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
 const infura_link = "https://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
@@ -96,6 +96,6 @@ app.post('/validate', function(req, res){
     })
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`KS listening at localhost:${port}`)
 })
