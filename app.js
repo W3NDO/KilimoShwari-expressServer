@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
     })
 })
 
-// app.use(express.json());
+app.use(express.json());
 app.get(`/policy/:id`, function(req, res){
     requested_policy = []
     contracts = contractSpec.methods.get_policy().call().then(response => {
@@ -96,6 +96,6 @@ app.post('/validate', function(req, res){
     })
 })
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, () => { //changes here break the heroku deploy
     console.log(`KS listening at localhost:${port}`)
 })
