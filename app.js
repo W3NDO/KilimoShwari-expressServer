@@ -28,6 +28,7 @@ const MaizeContract = require('./MaizeInsurance.json')
 let contractSpec = new web3.eth.Contract(MaizeContract.abi, remix_contract_addr);
 
 
+
 app.get('/', (req, res) => {
     contractSpec.methods.get_policy().call().then(response => {
         console.log("Getting all policies")
@@ -56,7 +57,7 @@ app.post('/buyPolicy', function(req, res) {
         .send(
         {
             from: web3.eth.defaultAccount,
-            gasPrice: "40000000000",
+            gasPrice: "60000000000",
             gas: 1000000
         }
     ).then( receipt => {
