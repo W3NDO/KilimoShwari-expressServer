@@ -1,15 +1,10 @@
 const express = require('express');
+const { default: privateKey } = require('./keys');
 const app = express();
 const port = process.env.PORT;
 
-const infura_socket = "wss://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
-const infura_link = "https://ropsten.infura.io/ws/v3/bfd2419d8f3242d494de2fc399e01c34";
 const metamask_link = "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"; 
-// const remix_contract_addr = "0xD43765DfF7aCa11e7c71978292C5fb8270734145"; 
 const remix_contract_addr ="0xB3f4AF7539d3B42ed9cbda6d3DEcA4dD8C019F20"; 
-const ropsten_test_acc_addr = "0x9E09e2F1efA701451963C63b9606dd0340e16368";
-const remix_acc_addr = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
-const metamask_addr = "0xB48094CfC4F471918AFC54D5D1ADD9fd2Be2eA49";
 
 function Web3(){
     const Web3 = require('web3');
@@ -19,7 +14,7 @@ function Web3(){
 }
 
 const web3 = Web3()
-const privateKey = '145d2ec3ce9b5b3a9b808a2d3bc064ed40319f86fa3f3afda61ea8f34b631b68';
+const privateKey = privateKey
 const account = web3.eth.accounts.privateKeyToAccount('0x' + privateKey)
 web3.eth.accounts.wallet.add(account);
 web3.eth.defaultAccount = account.address;
